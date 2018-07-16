@@ -1,0 +1,25 @@
+{
+  "name": "bottesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha test/dialogs/*",
+	"testwithcoverage": "nyc --reporter=lcov --reporter=text-lcov --reporter=html --reporter=text mocha test/dialogs/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botanalytics": "^2.3.1",
+    "botbuilder": "^3.15.0",
+    "dotenv": "^6.0.0",
+    "nyc": "^12.0.2",
+    "restify": "^7.2.1"
+  },
+  "devDependencies": {
+    "bot-tester": "^3.4.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5"
+  }
+}
