@@ -9,7 +9,7 @@
     "emulator": "botium-cli emulator console --convos ./convo --config ./botium.json",
     "emulatorBrowser": "botium-cli emulator browser --convos ./convo --config ./botium.json",
 	"botiumtestwithreport" : "botium-cli run mochawesome --convos convo --config botiumtxt.json --verbose",
-    "test-export": "node jasmine-export-testreport.js",
+    "test-export": "node jasmine-export-testreport.js"
 
   },
   "author": "",
