@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/_mocha test/dialogs/*",
-	"testwithcoverage": "nyc --reporter=lcov --reporter=text-lcov --reporter=html --reporter=text mocha test/dialogs/*"
+	"testwithcoverage": "nyc --reporter=junit --reporter=lcov --reporter=text-lcov --reporter=html --reporter=text mocha test/dialogs/*"
   },
   "author": "",
   "license": "ISC",
