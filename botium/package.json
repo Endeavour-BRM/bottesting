@@ -1,0 +1,29 @@
+{
+  "name": "botium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node jasmine",
+    "emulator": "botium-cli emulator console --convos ./convo --config ./botium.json",
+    "emulatorBrowser": "botium-cli emulator browser --convos ./convo --config ./botium.json",
+	"botiumtestwithreport" : "botium-cli run mochawesome --convos convo --config botiumtxt.json --verbose",
+    "test-export": "node jasmine-export-testreport.js",
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botium-connector-directline3": "0.0.1",
+    "botium-core": "^1.3.13",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.1.0",
+    "jasmine-node": "^1.15.0",
+    "jasmine-reporters": "^2.3.1",
+    "jasmine-xml2html-converter": "0.0.2",
+    "karma": "^2.0.4",
+    "karma-coverage": "^1.1.2",
+    "testmybot": "^1.4.4"
+  }
+}

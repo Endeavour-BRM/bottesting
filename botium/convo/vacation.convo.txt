@@ -1,0 +1,187 @@
+vacation
+
+#me
+vacation
+
+#bot default
+Sounds like a plan! Let's make arrangements to your subscription while you're away.
+
+#bot default
+Can you please key in your 5-digit account number?
+
+#me
+12121
+
+#bot default
+Thank you for sharing your details. When do you prefer we start placing your subscription on hold?
+
+#me
+tomorrow
+
+#bot default
+And when do you want it to resume?
+
+#me
+next month
+
+#bot default
+Got those dates in place. Would you like us to transfer your credit to your account or donate it to an education fund while your subscription is on hold?
+
+#me
+credit
+
+#bot default
+You have chosen to transfer your credit to your account.
+
+#bot default
+Please confirm.
+
+#me
+yes
+
+#bot default
+{
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "speak": "Thank you. Your subscription will be placed on hold from  .*. We will resume it on .*. While you are away, the balance amount will be credited to your account.",
+        "body": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "https://s3.ap-south-1.amazonaws.com/temp-sunil/g-logo.png"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "size": "large",
+                    "weight": "bolder",
+                    "text": "Summary",
+                    "horizontalAlignment": "right",
+                    "verticalAlignment": "center"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "isSubtle": true,
+                    "text": "Account"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "weight": "bolder",
+                    "text": "12121",
+                    "horizontalAlignment": "right"
+                  }
+                ]
+              }
+            ],
+            "spacing": "medium"
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "isSubtle": true,
+                    "text": "Hold"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "isSubtle": true,
+                    "text": "Resume"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "isSubtle": true,
+                    "text": "Status"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "weight": "bolder",
+                    "text": ".*",
+                    "horizontalAlignment": "right"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "weight": "bolder",
+                    "text": ".*",
+                    "horizontalAlignment": "right"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "weight": "bolder",
+                    "text": "Credit to my account",
+                    "horizontalAlignment": "right"
+                  }
+                ]
+              }
+            ],
+            "spacing": "medium",
+            "separator": true
+          }
+        ]
+      }
+    }
+  ]
+}
+
+#bot default
+Seems like you travel a lot. Our digital subscription can keep you posted with the latest events while you move around, which costs .* a year. Would you like to sign up.*
+
+#me
+no
+
+#bot default
+Would you like us to remind you about our digital subscription in future ?
+
+#me
+no
+
+#bot default
+Thank you, I have noted that. Let me know if you change your mind. Have a nice day!
+
+#me
+bye
+
+#bot default
+Thank you for choosing Genpact. Have a nice day!

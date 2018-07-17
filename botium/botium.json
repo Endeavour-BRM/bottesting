@@ -1,0 +1,16 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "Directline3 Plugin Sample",
+      "CONTAINERMODE": "directline3",
+      "DIRECTLINE3_SECRET": "HeLgZ8323hc.cwA.MbA.X5uyC4QedRzVDZ-UY7AvafNZWhYkMmRoUEhVZaQyE0E",
+      "DIRECTLINE3_WEBSOCKET": true,
+      "DIRECTLINE3_POLLINGINTERVAL": 1000,
+	  "SCRIPTING_XLSX_SHEETNAMES":"Dialogs",
+	  "SCRIPTING_XLSX_SHEETNAMES_UTTERANCES":"Utterances",
+	  "SCRIPTING_XLSX_STARTROW":2,
+	  "SCRIPTING_XLSX_STARTCOL":1
+	 
+    }
+  }
+}
